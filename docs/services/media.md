@@ -1,6 +1,6 @@
 # Media Server
 
-Plex, Jellyfin, *arr stack, and more.
+Plex, *arr stack, and NFS storage setup.
 
 ## Architecture Overview
 

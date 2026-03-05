@@ -66,8 +66,17 @@ nav:
   - Services: services.md
   - Getting Started: getting-started.md
   - Roadmap: roadmap.md
+  - Apps:
+    - Overview: apps/index.md
+    - Plex: apps/plex.md
+    - Radarr: apps/radarr.md
+    - Sonarr: apps/sonarr.md
+    - Prowlarr: apps/prowlarr.md
+    - qBittorrent: apps/qbittorrent.md
+    - Overseerr: apps/overseerr.md
+    - Vaultwarden: apps/vaultwarden.md
+    - Portainer: apps/portainer.md
   - Docs:
-    - Apps: apps/index.md
     - Media Server: services/media.md
     - Monitoring: services/monitoring.md
     - Storage: services/storage.md
@@ -82,3 +91,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Kyo0x
+
+extra_css:
+  - stylesheets/extra.css

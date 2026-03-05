@@ -4,67 +4,95 @@ hide:
   - toc
 ---
 
-# 🖥️ Kyo0x Homelab
+<div class="hero" markdown>
 
-> Self-hosted infrastructure, media, automation, and more — running 24/7 out of Norway.
+# Kyo0x Homelab
 
----
+Personal documentation for building, running, and rebuilding my homelab.
+Everything you need to know is in here — setup guides, configs, service references, and the full build roadmap.
 
-## Infrastructure
+<div class="hero-buttons" markdown>
+[🗺️ Build Roadmap](roadmap.md){ .btn-primary }
+[🚀 Getting Started](getting-started.md){ .btn-secondary }
+[📋 All Services](services.md){ .btn-secondary }
+</div>
 
-<div class="grid cards" markdown>
-
--   :material-server: **IBM Server**
-
-    ---
-
-    2x Xeon E5-2650 · 384GB RAM · 25.6TB SAS SSD
-
-    Primary compute and storage node.
-
-    [:octicons-arrow-right-24: Hardware](hardware.md)
-
--   :material-desktop-tower: **Ubuntu Server**
-
-    ---
-
-    i7-9700K · 32GB RAM · GTX 1070 Ti
-
-    GPU workloads, Plex, and local AI.
-
-    [:octicons-arrow-right-24: Hardware](hardware.md)
-
--   :material-raspberry-pi: **Raspberry Pi 4B**
-
-    ---
-
-    ARM Cortex-A72 · 4–8GB RAM
-
-    Always-on, low-power network services.
-
-    [:octicons-arrow-right-24: Hardware](hardware.md)
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Machines</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">45+</span>
+    <span class="stat-label">Services</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">416GB</span>
+    <span class="stat-label">Total RAM</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">25.6TB</span>
+    <span class="stat-label">Storage</span>
+  </div>
+</div>
 
 </div>
 
----
-
-## What's Running
+<p class="section-heading">Where to start</p>
 
 <div class="grid cards" markdown>
 
--   :material-movie-open: **Media**
+-   :material-map-outline: **Build Roadmap**
 
     ---
 
-    Plex, Jellyfin, Radarr, Sonarr, Lidarr, Overseerr, qBittorrent, Bazarr
+    14-day plan from zero to a fully running homelab. Follow this top to bottom if starting fresh.
 
-    [:octicons-arrow-right-24: Media Stack](services/media.md)
+    [:octicons-arrow-right-24: Go to roadmap](roadmap.md)
+
+-   :material-rocket-launch: **Getting Started**
+
+    ---
+
+    OS installation, Docker setup, ZFS, and first-boot configuration for all three machines.
+
+    [:octicons-arrow-right-24: Go to setup guides](getting-started.md)
+
+-   :material-format-list-bulleted: **All Services**
+
+    ---
+
+    Every service organized by machine, with ports, access method, and subdomain.
+
+    [:octicons-arrow-right-24: Go to services](services.md)
+
+-   :material-chip: **Hardware**
+
+    ---
+
+    Full specs for the IBM server, Ubuntu server, and Raspberry Pi 4B.
+
+    [:octicons-arrow-right-24: Go to hardware](hardware.md)
+
+</div>
+
+<p class="section-heading">Service docs</p>
+
+<div class="grid cards" markdown>
+
+-   :material-movie-open: **Media Stack**
+
+    ---
+
+    Plex, \*arr stack, qBittorrent, NFS setup, and how it all connects.
+
+    [:octicons-arrow-right-24: Media](services/media.md)
 
 -   :material-chart-line: **Monitoring**
 
     ---
 
-    Grafana, Prometheus, Uptime Kuma, Netdata, Dozzle
+    Grafana, Prometheus, Uptime Kuma, Netdata, Dozzle.
 
     [:octicons-arrow-right-24: Monitoring](services/monitoring.md)
 
@@ -72,43 +100,32 @@ hide:
 
     ---
 
-    Home Assistant, Node-RED, MQTT, Zigbee2MQTT
+    Home Assistant, Node-RED, Mosquitto, Zigbee2MQTT.
 
-    [:octicons-arrow-right-24: Home Assistant](services/homeassistant.md)
+    [:octicons-arrow-right-24: Home automation](services/homeassistant.md)
 
--   :material-robot: **AI**
-
-    ---
-
-    llama.cpp, Open WebUI, Stable Diffusion (Automatic1111)
-
-    [:octicons-arrow-right-24: Services](services.md)
-
--   :material-shield-lock: **Security**
+-   :material-cloud: **Storage & Cloud**
 
     ---
 
-    Vaultwarden, Authelia, CrowdSec, NetBird VPN
-
-    [:octicons-arrow-right-24: NetBird](services/netbird.md)
-
--   :material-cloud: **Personal Cloud**
-
-    ---
-
-    Nextcloud, Immich, Paperless-ngx, Syncthing
+    Nextcloud, Immich, Paperless-ngx, Syncthing, Filebrowser.
 
     [:octicons-arrow-right-24: Storage](services/storage.md)
 
+-   :material-shield-lock: **Security & Access**
+
+    ---
+
+    Vaultwarden, Authelia, CrowdSec, NetBird VPN, Nginx Proxy Manager.
+
+    [:octicons-arrow-right-24: NetBird](services/netbird.md)
+
+-   :material-apps: **All App Docs**
+
+    ---
+
+    Individual setup pages for Plex, Radarr, Sonarr, Vaultwarden, Portainer, and more.
+
+    [:octicons-arrow-right-24: Apps](apps/index.md)
+
 </div>
-
----
-
-## Quick Links
-
-| | |
-|---|---|
-| [📋 Full Service List](services.md) | All services organized by machine |
-| [🗺️ Build Roadmap](roadmap.md) | 14-day plan from zero to complete |
-| [🚀 Getting Started](getting-started.md) | Setup guides for all servers |
-| [⚙️ Hardware](hardware.md) | Full hardware specs |
