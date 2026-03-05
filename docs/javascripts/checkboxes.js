@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initCheckboxes() {
   const pageKey = "checklist:" + window.location.pathname;
 
   // Restore saved state
@@ -15,4 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem(pageKey, JSON.stringify(state));
     });
   });
-});
+}
+
+// MkDocs Material with navigation.instant uses a reactive document$ observable.
+// DOMContentLoaded only fires once — document$ fires on every page navigation.
+if (typeof document$ !== "undefined") {
+  document$.subscribe(initCheckboxes);
+} else {
+  document.addEventListener("DOMContentLoaded", initCheckboxes);
+}
