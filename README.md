@@ -4,6 +4,9 @@ Homelab stacks, templates, and more fun resources! This is a work in progress. I
 
 ## Navigation
 
+- [Hardware](./HARDWARE.md) - Complete hardware specifications.
+- [Services](./SERVICES.md) - Complete service list organized by machine.
+- [Getting Started](./GETTING-STARTED.md) - Setup guides for all servers.
 - [Apps](./apps) - List of all the apps and services.
 - [Automations](./automations) - Making my life easier.
 - [Home Assistant](./homeassistant) - Smart home services and automation.
@@ -14,14 +17,14 @@ Homelab stacks, templates, and more fun resources! This is a work in progress. I
 - [Proxy Management](./proxy) - NGINX Proxy Manager, DDNS with Cloudflare, Local Domains, and more.
 - [Cloud Services](./cloud) - Cloud-based services and integrations.
 - [NetBird](./netbird) - VPN and network management.
-- [Hardware](./HARDWARE.md) - Complete hardware specifications.
-- [Getting Started](./GETTING-STARTED.md) - Setup guides for all servers.
 
 ## Hardware
 
 For detailed hardware specifications, see [Hardware](./HARDWARE.md).
 
 ## Services Overview
+
+For a complete list of planned services organized by machine, see [Services](./SERVICES.md).
 
 ### Currently Running
 
