@@ -6,6 +6,7 @@ Homelab stacks, templates, and more fun resources! This is a work in progress. I
 
 - [Hardware](./HARDWARE.md) - Complete hardware specifications.
 - [Services](./SERVICES.md) - Complete service list organized by machine.
+- [Roadmap](./ROADMAP.md) - 14-day build plan from zero to complete.
 - [Getting Started](./GETTING-STARTED.md) - Setup guides for all servers.
 - [Apps](./apps) - List of all the apps and services.
 - [Automations](./automations) - Making my life easier.
