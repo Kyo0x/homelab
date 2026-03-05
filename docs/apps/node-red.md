@@ -7,8 +7,10 @@ Node-RED is a flow-based visual programming tool for wiring together IoT devices
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server |
+| **Proxmox VM** | `docker` VM (Ubuntu 22.04) |
 | **Port** | 1880 |
 | **Access** | 🔒 VPN |
+| **Storage** | `/data/appdata/node-red` (flows + settings) |
 
 ## Docker Compose
 
@@ -35,6 +37,38 @@ services:
 5. Enable authentication by editing `settings.js` (found in `/data/appdata/node-red/`) and setting `adminAuth`.
 6. Use the **Projects** feature to back up your flows to Gitea.
 
-## Links
+## Configuration
 
+Edit `/data/appdata/node-red/settings.js` to enable authentication:
+
+```js
+adminAuth: {
+    type: "credentials",
+    users: [{
+        username: "admin",
+        password: "$2b$08$...",  // bcrypt hash — generate with: node -e "console.log(require('bcryptjs').hashSync('yourpass', 8))"
+        permissions: "*"
+    }]
+},
+```
+
+**Key palette packages to install** (via Manage Palette):
+
+| Package | Purpose |
+|---|---|
+| `node-red-contrib-home-assistant-websocket` | Home Assistant integration |
+| `node-red-node-email` | Send email notifications |
+| `node-red-contrib-telegrambot` | Send Telegram messages |
+| `node-red-contrib-cron-plus` | Advanced cron scheduling |
+
+## Integration
+
+- **Home Assistant** — connect via the HA WebSocket node; paste a long-lived access token from **HA → Profile → Long-Lived Access Tokens**. Use `call service`, `get entities`, and `events` nodes to drive automations.
+- **Mosquitto** — use the built-in MQTT `in` and `out` nodes; set broker to `pi:1883` with the MQTT username/password created in Mosquitto.
+- **Gitea** — enable the **Projects** feature in Node-RED settings and push flows to a Gitea repository for version control.
+
+## See Also
+
+- [Home Assistant](home-assistant.md) — primary automation target
+- [Mosquitto](mosquitto.md) — MQTT message bus
 - [Official Docs](https://nodered.org/docs)

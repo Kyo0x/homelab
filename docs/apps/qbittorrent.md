@@ -11,7 +11,7 @@ qBittorrent is the download client for all *arr applications, configured to rout
 | | |
 |---|---|
 | **Machine** | 🖧 Ubuntu Server |
-| **Port** | 8080 |
+| **Port** | 8081 |
 | **Access** | 🔒 VPN |
 | **Storage** | `/mnt/media/Downloads` (NFS from IBM Server) |
 

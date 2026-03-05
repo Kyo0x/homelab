@@ -7,8 +7,10 @@ Netdata delivers real-time, per-second performance monitoring with zero configur
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server + 🖧 Ubuntu Server |
+| **Proxmox VM** | `docker` VM (Ubuntu 22.04) on IBM |
 | **Port** | 19999 |
 | **Access** | 🔒 VPN |
+| **Storage** | `/data/appdata/netdata` (config, lib, cache) |
 
 ## Docker Compose
 
@@ -48,6 +50,52 @@ services:
 5. Set up notification channels under `health_alarm_notify.conf` for email or Slack.
 6. Access `http://ubuntu:19999` on the Ubuntu host to see GPU and NVIDIA stats.
 
-## Links
+## Configuration
 
+**Custom alert thresholds** — create override files in `/data/appdata/netdata/config/health.d/`:
+
+```conf
+# /data/appdata/netdata/config/health.d/disk.conf
+alarm: disk_space_usage
+    on: disk.space
+    lookup: average -10m percentage of used
+    units: %
+    every: 1m
+    warn: $this > 80
+    crit: $this > 90
+    info: disk space utilization
+```
+
+**Notification channels** — edit `health_alarm_notify.conf`:
+
+```bash
+# Telegram
+SEND_TELEGRAM="YES"
+TELEGRAM_BOT_TOKEN="your-bot-token"
+TELEGRAM_CHAT_ID="your-chat-id"
+
+# Email
+SEND_EMAIL="YES"
+DEFAULT_RECIPIENT_EMAIL="aleks@example.com"
+```
+
+**Disable cloud / reduce telemetry** — add to the compose environment:
+
+```yaml
+    environment:
+      - DO_NOT_TRACK=1
+```
+
+**NVIDIA GPU metrics** (Ubuntu Server) — Netdata auto-detects NVIDIA GPUs when the NVIDIA driver is present. No extra config needed; GPU charts appear automatically.
+
+## Integration
+
+- **Grafana** — Netdata can expose a Prometheus-compatible scrape endpoint; add it as a Grafana datasource for unified dashboards. Enable in `netdata.conf`: `[backend] enabled = yes; type = prometheus`.
+- **Prometheus** — alternatively, use the Netdata Prometheus exporter and scrape it from Prometheus.
+- **Homepage** — embed the Netdata per-host widget in the dashboard for at-a-glance system health.
+
+## See Also
+
+- [Grafana](grafana.md) — centralised metrics dashboards
+- [Prometheus](prometheus.md) — time-series metrics backend
 - [Official Docs](https://learn.netdata.cloud/docs)

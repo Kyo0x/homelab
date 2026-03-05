@@ -7,8 +7,10 @@ Audiobookshelf is a self-hosted server for streaming audiobooks and podcasts wit
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server |
+| **Proxmox VM** | `docker` VM (Ubuntu 22.04) |
 | **Port** | 13378 |
 | **Access** | 🌐 Public — `books.srng.no` |
+| **Storage** | `/data/appdata/audiobookshelf` (config + metadata), `/data/books/audiobooks`, `/data/books/podcasts` |
 
 ## Docker Compose
 
@@ -38,6 +40,35 @@ services:
 5. Enable progress sync so listening position is remembered across all devices.
 6. Expose `books.srng.no` publicly via Nginx Proxy Manager.
 
-## Links
+## Configuration
 
+**Library settings** — configure per library under **Settings → Libraries**:
+
+| Setting | Recommended value |
+|---|---|
+| Scanner | Automatic (watches directory for new files) |
+| Metadata agent | Audnexus (for audiobooks) |
+| Prefer local metadata | On (keep embedded tags) |
+| Book cover extraction | From audio file |
+
+**Mobile app setup:**
+
+1. Install the **Audiobookshelf** app (iOS App Store / Google Play — free, open source).
+2. Add server: enter `https://books.srng.no` (or VPN address for private setup).
+3. Log in with your account credentials.
+4. Enable **Download for offline** on any title for offline playback.
+5. Playback speed, sleep timer, and chapter navigation are all available in-app.
+
+**Podcast subscriptions** — search directly in the Podcasts library or import an OPML file from a previous podcast app.
+
+## Integration
+
+- **Nginx Proxy Manager** — expose `books.srng.no` publicly so the mobile app works away from home.
+- **Authelia** — optionally protect the web UI with SSO (the mobile app handles its own auth).
+- **Syncthing** — sync downloaded audiobooks from a desktop Audible/Libby export into `/data/books/audiobooks` on the server.
+
+## See Also
+
+- [Kavita](kavita.md) — reading server for manga/comics/ebooks
+- [Calibre-Web](calibre-web.md) — ebook library browser
 - [Official Docs](https://www.audiobookshelf.org/docs)

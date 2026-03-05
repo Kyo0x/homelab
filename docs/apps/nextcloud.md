@@ -7,7 +7,7 @@ Nextcloud is a self-hosted file sync and collaboration platform — your private
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server |
-| **Port** | 8080 |
+| **Port** | 8088 |
 | **Access** | 🌐 Public — `cloud.srng.no` |
 
 ## Docker Compose
@@ -25,7 +25,7 @@ services:
       - /data/appdata/nextcloud:/config
       - /data/cloud:/data
     ports:
-      - 8080:80
+      - 8088:80
     restart: unless-stopped
 
   nextcloud-db:
@@ -43,7 +43,7 @@ services:
 
 ## Setup
 
-1. Open `http://IBM:8080`, create an admin account, and point the data folder to `/data`.
+1. Open `http://IBM:8088`, create an admin account, and point the data folder to `/data`.
 2. Select **MySQL/MariaDB** as the database and enter the credentials from the compose file.
 3. Complete the installation and then go to **Settings → Security → HTTPS** to trust the proxy.
 4. Add `'trusted_proxies' => ['nginx-proxy-manager']` and `'overwriteprotocol' => 'https'` to `config.php`.

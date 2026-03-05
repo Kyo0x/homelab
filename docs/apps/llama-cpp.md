@@ -7,7 +7,7 @@ llama.cpp is a high-performance LLM inference server that runs quantised languag
 | | |
 |---|---|
 | **Machine** | 🖧 Ubuntu Server |
-| **Port** | 8080 |
+| **Port** | 8091 |
 | **Access** | 🔒 VPN |
 
 ## Docker Compose
@@ -22,7 +22,7 @@ services:
     volumes:
       - /data/models:/models
     ports:
-      - 8080:8080
+      - 8091:8091
     command: >
       -m /models/mistral-7b-instruct-v0.2.Q4_K_M.gguf
       --host 0.0.0.0
@@ -43,7 +43,7 @@ services:
 
 1. Ensure the NVIDIA Container Toolkit is installed on Ubuntu: `nvidia-ctk runtime configure --runtime=docker`.
 2. Download a GGUF model into `/data/models` — start with `mistral-7b-instruct-v0.2.Q4_K_M.gguf` (~4.5 GB).
-3. Start the container and test inference: `curl http://ubuntu:8080/v1/chat/completions -d '{"model":"mistral","messages":[{"role":"user","content":"Hello"}]}'`.
+3. Start the container and test inference: `curl http://ubuntu:8091/v1/chat/completions -d '{"model":"mistral","messages":[{"role":"user","content":"Hello"}]}'`.
 4. Tune the `-ngl` flag (number of GPU layers) to maximise VRAM usage — start with 35 for a 1070 Ti.
 5. Adjust `--ctx-size` to balance context window size against VRAM consumption.
 6. Connect Open WebUI to this endpoint for a chat interface.

@@ -7,7 +7,7 @@ Wiki.js is a powerful, self-hosted knowledge base with Markdown editing, full-te
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server |
-| **Port** | 3000 |
+| **Port** | 8084 |
 | **Access** | 🌐 Public — `docs.srng.no` |
 
 ## Docker Compose
@@ -26,7 +26,7 @@ services:
       - DB_USER=wiki
       - DB_PASS=changeme
     ports:
-      - 3000:3000
+      - 8084:8084
     restart: unless-stopped
 
   wiki-db:
@@ -43,7 +43,7 @@ services:
 
 ## Setup
 
-1. Start the stack and navigate to `http://IBM:3000` — complete the initial setup wizard.
+1. Start the stack and navigate to `http://IBM:8084` — complete the initial setup wizard.
 2. Create the admin account and set the site URL to `https://docs.srng.no`.
 3. Enable Git storage sync under **Administration → Storage** to back up pages to Gitea.
 4. Set the default editor to Markdown under **Administration → Editors**.

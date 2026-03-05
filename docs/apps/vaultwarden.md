@@ -11,7 +11,7 @@ Vaultwarden is an unofficial Bitwarden-compatible server written in Rust. It's l
 | | |
 |---|---|
 | **Machine** | 🖥️ IBM Server |
-| **Port** | 8080 |
+| **Port** | 8082 |
 | **Access** | 🔒 VPN |
 
 ## Features
@@ -38,7 +38,7 @@ services:
     volumes:
       - vaultwarden-data:/data
     ports:
-      - 8080:80
+      - 8082:80
     restart: unless-stopped
 
 volumes:

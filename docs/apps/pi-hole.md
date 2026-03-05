@@ -7,7 +7,7 @@ Pi-hole is a network-wide DNS sinkhole that blocks ads and trackers for every de
 | | |
 |---|---|
 | **Machine** | 🍓 Raspberry Pi 4B |
-| **Port** | 80 (web), 8080 (admin) |
+| **Port** | 80 (admin UI), 53 (DNS) |
 | **Access** | 🔒 VPN |
 
 ## Docker Compose
@@ -27,7 +27,7 @@ services:
     ports:
       - 53:53/tcp
       - 53:53/udp
-      - 8080:80
+      - 80:80
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
@@ -36,7 +36,7 @@ services:
 ## Setup
 
 1. Set `WEBPASSWORD` to a strong password before first launch.
-2. Open the admin UI at `http://pi:8080/admin` and log in.
+2. Open the admin UI at `http://pi/admin` and log in.
 3. Go to **Settings → DNS** and set upstream DNS to `127.0.0.1#5335` (Unbound).
 4. Add blocklists under **Group Management → Adlists** — start with Steven Black's list.
 5. Point your router's DHCP DNS server to the Pi 4B IP address.

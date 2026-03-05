@@ -66,6 +66,10 @@ nav:
   - Services: services.md
   - Getting Started: getting-started.md
   - Roadmap: roadmap.md
+  - Guides:
+    - ZFS Pool Setup: guides/zfs.md
+    - NFS Setup: guides/nfs.md
+    - NVIDIA & CUDA: guides/nvidia.md
   - Apps:
     - Overview: apps/index.md
     - Media:
@@ -107,6 +111,7 @@ nav:
       - Netdata: apps/netdata.md
       - Dozzle: apps/dozzle.md
       - Watchtower: apps/watchtower.md
+      - Restic: apps/restic.md
     - Home Automation:
       - Home Assistant: apps/home-assistant.md
       - Node-RED: apps/node-red.md
@@ -114,7 +119,7 @@ nav:
       - Zigbee2MQTT: apps/zigbee2mqtt.md
     - Dev & Productivity:
       - Portainer: apps/portainer.md
-      - Gitea: apps/gitea.md
+      - Forgejo: apps/forgejo.md
       - Wiki.js: apps/wiki-js.md
       - Homepage: apps/homepage.md
       - code-server: apps/code-server.md
@@ -124,16 +129,17 @@ nav:
       - llama.cpp: apps/llama-cpp.md
       - Open WebUI: apps/open-webui.md
       - Stable Diffusion: apps/stable-diffusion.md
+    - Game Hosting:
+      - Pelican Panel: apps/pelican.md
+      - Wings: apps/wings.md
   - Docs:
     - Media Server: services/media.md
     - Monitoring: services/monitoring.md
     - Storage: services/storage.md
     - Proxy & Networking: services/proxy.md
     - Home Automation: services/homeassistant.md
-    - Surveillance: services/surveillance.md
-    - Cloud: services/cloud.md
+    - Game Hosting: services/gamehosting.md
     - NetBird VPN: services/netbird.md
-    - Automations: services/automations.md
 
 extra:
   social:

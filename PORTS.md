@@ -59,30 +59,33 @@
 | `8686` | Lidarr |
 | `8787` | Readarr |
 | `9696` | Prowlarr |
-| `8081` | qBittorrent |
 | `6767` | Bazarr |
 | `5055` | Overseerr |
 | `4533` | Navidrome |
 | `13378` | Audiobookshelf |
 | `8082` | Vaultwarden |
+| `9091` | Authelia |
 | `9000` | Portainer |
 | `3000` | Grafana |
 | `9090` | Prometheus |
 | `3001` | Uptime Kuma |
+| `19999` | Netdata |
 | `8083` | Dozzle |
 | `3002` | Homepage |
-| `3003` | Gitea / Forgejo |
-| `8084` | Wiki.js / BookStack |
+| `3003` | Forgejo |
+| `8084` | Wiki.js |
 | `8085` | Stirling-PDF |
 | `8086` | IT-Tools |
 | `8384` | Syncthing |
 | `8000` | Paperless-ngx |
 | `8087` | Filebrowser |
 | `8088` | Nextcloud |
-| `8123` | Home Assistant |
-| `1880` | Node-RED |
 | `8089` | Calibre-Web |
 | `8090` | Kavita |
+| `8123` | Home Assistant (haos VM) |
+| `1880` | Node-RED |
+| `80` / `443` | Pelican Panel (docker VM, behind NPM) |
+| `8080` / `2022` | Wings daemon + SFTP (gameservers VM) |
 
 ### Ubuntu Server
 
@@ -94,6 +97,7 @@
 | `8443` | code-server |
 | `7860` | Stable Diffusion (Automatic1111) |
 | `8091` | llama-server |
+| `8081` | qBittorrent |
 
 ### Raspberry Pi 4B
 

@@ -88,10 +88,10 @@ Complete service list for the homelab, organized by machine.
 
 | Service | What it does | Access |
 |---|---|---|
-| [**Gitea / Forgejo**](apps/gitea.md) | Self-hosted GitHub | 🔒 VPN |
+| [**Forgejo**](apps/forgejo.md) | Self-hosted Git service (Gitea fork) | 🔒 VPN |
 | [**Portainer**](apps/portainer.md) | Docker container GUI manager | 🔒 VPN |
 | [**Homepage**](apps/homepage.md) | Clean homelab dashboard with widgets | 🔒 VPN |
-| [**Wiki.js / BookStack**](apps/wiki-js.md) | Personal knowledge base / wiki | 🔒 VPN |
+| [**Wiki.js**](apps/wiki-js.md) | Personal knowledge base / wiki | 🔒 VPN |
 | [**Stirling-PDF**](apps/stirling-pdf.md) | All-in-one self-hosted PDF tools | 🔒 VPN |
 | [**IT-Tools**](apps/it-tools.md) | 100+ developer utility tools in one app | 🔒 VPN |
 
@@ -158,11 +158,11 @@ Complete service list for the homelab, organized by machine.
 | `status.srng.no` | Uptime Kuma | 🔒 VPN |
 | `docker.srng.no` | Portainer | 🔒 VPN |
 | `proxy.srng.no` | Nginx Proxy Manager | 🔒 VPN |
-| `git.srng.no` | Gitea / Forgejo | 🔒 VPN |
+| `git.srng.no` | Forgejo | 🔒 VPN |
 | `code.srng.no` | code-server | 🔒 VPN |
 | `ai.srng.no` | Open WebUI | 🔒 VPN |
 | `draw.srng.no` | Stable Diffusion | 🔒 VPN |
-| `docs.srng.no` | Wiki.js / BookStack | 🔒 VPN |
+| `docs.srng.no` | Wiki.js | 🔒 VPN |
 | `files.srng.no` | Filebrowser | 🔒 VPN |
 | `paper.srng.no` | Paperless-ngx | 🔒 VPN |
 | `dash.srng.no` | Homepage | 🔒 VPN |
@@ -206,6 +206,41 @@ NetBird (IBM) ── Mesh VPN ──► All nodes (IBM + Ubuntu + Pi + your devi
 
 | Machine | Est. RAM Usage | Headroom |
 |---|---|---|
-| **IBM** (384GB) | ~20–40GB for all services | 340GB+ free for game hosting |
+| **IBM** (384GB) | ~20–40GB personal services + game hosting | 300GB+ for game servers |
 | **Ubuntu** (32GB) | ~16–24GB for GPU services | Comfortable |
 | **Pi 4B** (4–8GB) | ~1–2GB | Plenty |
+
+---
+
+## Game Hosting (Arctichost.no)
+
+Commercial game server hosting running on the IBM Server, fully isolated from personal services in a dedicated Proxmox VM.
+
+> 📖 [Full game hosting documentation →](services/gamehosting.md)
+
+### Proxmox VM Layout
+
+| VM | Purpose |
+|---|---|
+| `docker` VM | Pelican Panel web UI |
+| `gameservers` VM | Wings daemon + all game server containers |
+
+### Services
+
+| Service | Description | VM | Access |
+|---|---|---|---|
+| [Pelican Panel](apps/pelican.md) | Game server web UI + API | `docker` VM | 🌐 `panel.arctichost.no` |
+| [Wings](apps/wings.md) | Node daemon — runs game containers | `gameservers` VM | Internal only |
+
+### Game Port Ranges
+
+Game servers use **direct port forwarding** — not proxied through NPM or Cloudflare Tunnel.
+
+| Range | Protocol | Games |
+|---|---|---|
+| 25565–25600 | TCP/UDP | Minecraft Java |
+| 19132–19160 | UDP | Minecraft Bedrock |
+| 27015–27060 | TCP/UDP | Steam games (CS2, Rust, etc.) |
+| 2456–2480 | UDP | Valheim |
+| 7777–7810 | UDP | Palworld, ARK, Conan |
+| 25444–25460 | UDP | Satisfactory |
