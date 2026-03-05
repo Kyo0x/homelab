@@ -68,14 +68,61 @@ nav:
   - Roadmap: roadmap.md
   - Apps:
     - Overview: apps/index.md
-    - Plex: apps/plex.md
-    - Radarr: apps/radarr.md
-    - Sonarr: apps/sonarr.md
-    - Prowlarr: apps/prowlarr.md
-    - qBittorrent: apps/qbittorrent.md
-    - Overseerr: apps/overseerr.md
-    - Vaultwarden: apps/vaultwarden.md
-    - Portainer: apps/portainer.md
+    - Media:
+      - Plex: apps/plex.md
+      - Radarr: apps/radarr.md
+      - Sonarr: apps/sonarr.md
+      - Lidarr: apps/lidarr.md
+      - Readarr: apps/readarr.md
+      - Prowlarr: apps/prowlarr.md
+      - qBittorrent: apps/qbittorrent.md
+      - Overseerr: apps/overseerr.md
+      - Bazarr: apps/bazarr.md
+    - Music & Books:
+      - Navidrome: apps/navidrome.md
+      - Audiobookshelf: apps/audiobookshelf.md
+      - Calibre-Web: apps/calibre-web.md
+      - Kavita: apps/kavita.md
+      - Beets: apps/beets.md
+    - Personal Cloud:
+      - Nextcloud: apps/nextcloud.md
+      - Immich: apps/immich.md
+      - Paperless-ngx: apps/paperless-ngx.md
+      - Syncthing: apps/syncthing.md
+      - Filebrowser: apps/filebrowser.md
+    - Security:
+      - Vaultwarden: apps/vaultwarden.md
+      - Authelia: apps/authelia.md
+      - CrowdSec: apps/crowdsec.md
+    - Networking:
+      - Nginx Proxy Manager: apps/nginx-proxy-manager.md
+      - NetBird: apps/netbird.md
+      - Pi-hole: apps/pi-hole.md
+      - Unbound: apps/unbound.md
+    - Monitoring:
+      - Grafana: apps/grafana.md
+      - Prometheus: apps/prometheus.md
+      - Uptime Kuma: apps/uptime-kuma.md
+      - Netdata: apps/netdata.md
+      - Dozzle: apps/dozzle.md
+      - Watchtower: apps/watchtower.md
+    - Home Automation:
+      - Home Assistant: apps/home-assistant.md
+      - Node-RED: apps/node-red.md
+      - Mosquitto: apps/mosquitto.md
+      - Zigbee2MQTT: apps/zigbee2mqtt.md
+    - Dev & Productivity:
+      - Portainer: apps/portainer.md
+      - Gitea: apps/gitea.md
+      - Wiki.js: apps/wiki-js.md
+      - Homepage: apps/homepage.md
+      - code-server: apps/code-server.md
+      - Stirling-PDF: apps/stirling-pdf.md
+      - IT-Tools: apps/it-tools.md
+    - AI:
+      - llama.cpp: apps/llama-cpp.md
+      - Open WebUI: apps/open-webui.md
+      - Stable Diffusion: apps/stable-diffusion.md
   - Docs:
     - Media Server: services/media.md
     - Monitoring: services/monitoring.md
