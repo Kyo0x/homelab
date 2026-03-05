@@ -1,0 +1,84 @@
+site_name: Kyo0x Homelab
+site_url: https://kyo0x.github.io/homelab
+site_description: Homelab stacks, templates, configs, and documentation.
+site_author: Kyo0x
+repo_url: https://github.com/Kyo0x/homelab
+repo_name: Kyo0x/homelab
+
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Hardware: hardware.md
+  - Services: services.md
+  - Getting Started: getting-started.md
+  - Roadmap: roadmap.md
+  - Docs:
+    - Apps: apps/index.md
+    - Media Server: services/media.md
+    - Monitoring: services/monitoring.md
+    - Storage: services/storage.md
+    - Proxy & Networking: services/proxy.md
+    - Home Automation: services/homeassistant.md
+    - Surveillance: services/surveillance.md
+    - Cloud: services/cloud.md
+    - NetBird VPN: services/netbird.md
+    - Automations: services/automations.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kyo0x
