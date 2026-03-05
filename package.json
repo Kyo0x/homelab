@@ -1,0 +1,21 @@
+{
+  "name": "homelab",
+  "version": "1.0.0",
+  "description": "Homelab stacks, templates, and more fun resources! This is a work in progress. I still have a ton to update and add.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyo0x/homelab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kyo0x/homelab/issues"
+  },
+  "homepage": "https://github.com/Kyo0x/homelab#readme"
+}
