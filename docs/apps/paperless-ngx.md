@@ -6,7 +6,7 @@ Paperless-ngx scans, OCRs, indexes, and archives physical and digital documents 
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8000 |
 | **Access** | 🌐 Public — `paper.srng.no` |
 

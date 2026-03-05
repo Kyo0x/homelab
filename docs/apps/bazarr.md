@@ -6,7 +6,7 @@ Bazarr automatically downloads subtitles for your Sonarr and Radarr libraries.
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 6767 |
 | **Access** | 🔒 VPN |
 

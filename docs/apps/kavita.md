@@ -6,7 +6,7 @@ Kavita is a fast, feature-rich reading server for manga, comics, and books with 
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 5000 |
 | **Access** | �� VPN |
 

@@ -6,7 +6,7 @@ Uptime Kuma monitors the availability of all homelab services and public endpoin
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 3001 |
 | **Access** | 🌐 Public — `status.srng.no` |
 

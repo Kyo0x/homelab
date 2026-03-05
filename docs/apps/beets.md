@@ -6,7 +6,7 @@ Beets is a command-line music library manager that auto-tags, renames, and organ
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | — (CLI only) |
 | **Access** | 🔒 VPN |
 

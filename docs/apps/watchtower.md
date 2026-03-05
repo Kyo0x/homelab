@@ -6,7 +6,7 @@ Watchtower automatically monitors running Docker containers and pulls updated im
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | — (no UI) |
 | **Access** | 🔒 VPN |
 

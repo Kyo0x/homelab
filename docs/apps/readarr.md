@@ -6,7 +6,7 @@ Readarr automatically monitors, downloads, and manages your eBook and audiobook 
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8787 |
 | **Access** | 🔒 VPN |
 

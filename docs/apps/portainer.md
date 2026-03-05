@@ -8,9 +8,11 @@ Portainer provides a web-based interface for managing Docker containers, images,
 
 ## Deployment
 
-- **Host:** IBM Server (or each Docker host)
-- **Access:** 🔒 VPN — `docker.srng.no`
-- **Port:** 9000
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 9000 |
+| **Access** | 🔒 VPN |
 
 ## Features
 

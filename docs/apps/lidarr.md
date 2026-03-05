@@ -6,7 +6,7 @@ Lidarr automatically monitors, downloads, and manages your music collection.
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8686 |
 | **Access** | 🔒 VPN |
 

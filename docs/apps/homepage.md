@@ -6,7 +6,7 @@ Homepage is a modern, highly customisable homelab dashboard with live service wi
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 3000 |
 | **Access** | 🌐 Public — `dash.srng.no` |
 

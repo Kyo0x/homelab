@@ -6,7 +6,7 @@ Nginx Proxy Manager provides a clean web UI for managing reverse proxy hosts and
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 81 (admin UI) |
 | **Access** | 🔒 VPN |
 

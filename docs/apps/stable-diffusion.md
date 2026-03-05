@@ -6,7 +6,7 @@ Automatic1111 is a feature-rich web UI for running Stable Diffusion image genera
 
 | | |
 |---|---|
-| **Host** | Ubuntu Server |
+| **Machine** | 🖧 Ubuntu Server |
 | **Port** | 7860 |
 | **Access** | 🌐 Public — `draw.srng.no` |
 

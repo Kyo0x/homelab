@@ -6,7 +6,7 @@ Stirling-PDF is a self-hosted, all-in-one PDF manipulation tool with 50+ operati
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 |
 | **Access** | 🔒 VPN |
 

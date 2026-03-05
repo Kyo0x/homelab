@@ -6,7 +6,7 @@ Grafana renders beautiful, interactive metrics dashboards from Prometheus and ot
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 3000 |
 | **Access** | 🌐 Public — `monitor.srng.no` |
 

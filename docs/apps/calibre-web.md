@@ -6,7 +6,7 @@ Calibre-Web is a polished web-based eBook library browser and reader backed by a
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8083 |
 | **Access** | 🔒 VPN |
 

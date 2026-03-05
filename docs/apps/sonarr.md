@@ -8,10 +8,12 @@ Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS fee
 
 ## Deployment
 
-- **Host:** IBM Server (Proxmox VM/LXC)
-- **Storage:** `/tank/media/TV`
-- **Access:** 🔒 VPN — Internal only
-- **Port:** 8989
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 8989 |
+| **Access** | 🔒 VPN |
+| **Storage** | `/tank/media/TV` |
 
 ## Features
 

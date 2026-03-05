@@ -6,7 +6,7 @@ llama.cpp is a high-performance LLM inference server that runs quantised languag
 
 | | |
 |---|---|
-| **Host** | Ubuntu Server |
+| **Machine** | 🖧 Ubuntu Server |
 | **Port** | 8080 |
 | **Access** | 🔒 VPN |
 

@@ -6,7 +6,7 @@ Dozzle provides a real-time, searchable web interface for viewing Docker contain
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 |
 | **Access** | 🔒 VPN |
 

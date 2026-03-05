@@ -6,7 +6,7 @@ Eclipse Mosquitto is a lightweight MQTT broker that acts as the message bus for 
 
 | | |
 |---|---|
-| **Host** | Raspberry Pi 4B |
+| **Machine** | 🍓 Raspberry Pi 4B |
 | **Port** | 1883 (MQTT), 9001 (WebSocket) |
 | **Access** | 🔒 VPN |
 

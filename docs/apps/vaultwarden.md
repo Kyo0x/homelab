@@ -8,10 +8,11 @@ Vaultwarden is an unofficial Bitwarden-compatible server written in Rust. It's l
 
 ## Deployment
 
-- **Host:** IBM Server (Proxmox VM/LXC)
-- **Access:** 🔒 VPN — `vault.srng.no`
-- **Port:** 8080
-- **Database:** SQLite (default) or PostgreSQL
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 8080 |
+| **Access** | 🔒 VPN |
 
 ## Features
 

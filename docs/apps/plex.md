@@ -8,10 +8,12 @@ Plex is the primary media streaming platform for the homelab, serving movies, TV
 
 ## Deployment
 
-- **Host:** Ubuntu Server
-- **Hardware:** i7-9700K, GTX 1070 Ti (NVENC transcoding)
-- **Storage:** NFS mount from IBM Server (`/tank/media`)
-- **Access:** 🌐 Public — `plex.srng.no`
+| | |
+|---|---|
+| **Machine** | 🖧 Ubuntu Server |
+| **Port** | 32400 |
+| **Access** | 🌐 Public — `plex.srng.no` |
+| **Storage** | `/tank/media` (NFS from IBM Server) |
 
 ## Features
 

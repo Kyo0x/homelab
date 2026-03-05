@@ -6,7 +6,7 @@ CrowdSec is a collaborative intrusion prevention system that analyzes logs and a
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 (local API) |
 | **Access** | 🔒 VPN |
 

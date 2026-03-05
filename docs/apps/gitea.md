@@ -6,7 +6,7 @@ Gitea is a lightweight, self-hosted Git service with pull requests, CI/CD via Gi
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 3000 (web), 222 (SSH) |
 | **Access** | 🌐 Public — `git.srng.no` |
 

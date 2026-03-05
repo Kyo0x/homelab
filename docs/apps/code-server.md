@@ -6,7 +6,7 @@ code-server runs VS Code in the browser, giving you a full IDE accessible from a
 
 | | |
 |---|---|
-| **Host** | Ubuntu Server |
+| **Machine** | 🖧 Ubuntu Server |
 | **Port** | 8080 |
 | **Access** | 🌐 Public — `code.srng.no` |
 

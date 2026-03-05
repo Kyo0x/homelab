@@ -96,6 +96,7 @@ nav:
       - CrowdSec: apps/crowdsec.md
     - Networking:
       - Nginx Proxy Manager: apps/nginx-proxy-manager.md
+      - Cloudflare Tunnel: apps/cloudflare-tunnel.md
       - NetBird: apps/netbird.md
       - Pi-hole: apps/pi-hole.md
       - Unbound: apps/unbound.md
@@ -141,3 +142,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/checkboxes.js

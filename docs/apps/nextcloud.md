@@ -6,7 +6,7 @@ Nextcloud is a self-hosted file sync and collaboration platform — your private
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 |
 | **Access** | 🌐 Public — `cloud.srng.no` |
 

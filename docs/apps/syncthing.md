@@ -6,7 +6,7 @@ Syncthing provides continuous, peer-to-peer file synchronization between your ho
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8384 |
 | **Access** | 🔒 VPN |
 

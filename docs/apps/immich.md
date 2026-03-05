@@ -6,7 +6,7 @@ Immich is a self-hosted Google Photos replacement with GPU-accelerated ML for fa
 
 | | |
 |---|---|
-| **Host** | Ubuntu Server |
+| **Machine** | 🖧 Ubuntu Server |
 | **Port** | 2283 |
 | **Access** | 🌐 Public — `photos.srng.no` |
 

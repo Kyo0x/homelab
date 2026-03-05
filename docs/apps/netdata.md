@@ -6,7 +6,7 @@ Netdata delivers real-time, per-second performance monitoring with zero configur
 
 | | |
 |---|---|
-| **Host** | IBM Server + Ubuntu Server |
+| **Machine** | 🖥️ IBM Server + 🖧 Ubuntu Server |
 | **Port** | 19999 |
 | **Access** | 🔒 VPN |
 

@@ -6,7 +6,7 @@ Open WebUI provides a polished ChatGPT-like interface for interacting with local
 
 | | |
 |---|---|
-| **Host** | Ubuntu Server |
+| **Machine** | 🖧 Ubuntu Server |
 | **Port** | 3000 |
 | **Access** | 🌐 Public — `ai.srng.no` |
 

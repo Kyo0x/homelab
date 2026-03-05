@@ -8,10 +8,12 @@ Radarr monitors multiple RSS feeds for new movies and will automatically grab, s
 
 ## Deployment
 
-- **Host:** IBM Server (Proxmox VM/LXC)
-- **Storage:** `/tank/media/Movies`
-- **Access:** 🔒 VPN — Internal only
-- **Port:** 7878
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 7878 |
+| **Access** | 🔒 VPN |
+| **Storage** | `/tank/media/Movies` |
 
 ## Features
 

@@ -6,7 +6,7 @@ Zigbee2MQTT bridges Zigbee devices to MQTT, exposing them to Home Assistant with
 
 | | |
 |---|---|
-| **Host** | Raspberry Pi 4B |
+| **Machine** | 🍓 Raspberry Pi 4B |
 | **Port** | 8080 (web UI) |
 | **Access** | 🔒 VPN |
 

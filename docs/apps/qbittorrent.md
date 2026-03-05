@@ -8,10 +8,12 @@ qBittorrent is the download client for all *arr applications, configured to rout
 
 ## Deployment
 
-- **Host:** Ubuntu Server
-- **VPN:** ProtonVPN (all traffic routed through VPN)
-- **Access:** 🔒 VPN — Internal only (192.168.1.50:8080)
-- **Downloads:** Saved to `/mnt/media/Downloads` (NFS mount from IBM)
+| | |
+|---|---|
+| **Machine** | 🖧 Ubuntu Server |
+| **Port** | 8080 |
+| **Access** | 🔒 VPN |
+| **Storage** | `/mnt/media/Downloads` (NFS from IBM Server) |
 
 ## Features
 

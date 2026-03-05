@@ -6,7 +6,7 @@ Prometheus scrapes and stores time-series metrics from all machines and services
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 9090 |
 | **Access** | 🔒 VPN |
 

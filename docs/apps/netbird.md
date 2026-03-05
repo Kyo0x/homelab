@@ -6,7 +6,7 @@ NetBird is a self-hosted WireGuard-based mesh VPN that connects all homelab mach
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 443 (management), 10000 (signal), 3478 (STUN/TURN) |
 | **Access** | 🔒 VPN |
 

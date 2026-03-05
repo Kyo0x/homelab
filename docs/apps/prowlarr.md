@@ -8,9 +8,11 @@ Prowlarr is an indexer manager/proxy that integrates with your various PVR apps.
 
 ## Deployment
 
-- **Host:** IBM Server (Proxmox VM/LXC)
-- **Access:** 🔒 VPN — Internal only
-- **Port:** 9696
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 9696 |
+| **Access** | 🔒 VPN |
 
 ## Features
 

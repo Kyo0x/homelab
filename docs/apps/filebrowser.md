@@ -6,7 +6,7 @@ Filebrowser provides a clean, web-based file manager for browsing and managing f
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 |
 | **Access** | 🌐 Public — `files.srng.no` |
 

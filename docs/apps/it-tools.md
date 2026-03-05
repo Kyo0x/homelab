@@ -6,7 +6,7 @@ IT-Tools is a self-hosted collection of 100+ handy utilities for developers — 
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8080 |
 | **Access** | 🔒 VPN |
 

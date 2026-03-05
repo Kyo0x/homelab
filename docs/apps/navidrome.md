@@ -6,7 +6,7 @@ Navidrome is a self-hosted music streaming server compatible with all Subsonic/A
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 4533 |
 | **Access** | 🌐 Public — `music.srng.no` |
 

@@ -6,7 +6,7 @@ Audiobookshelf is a self-hosted server for streaming audiobooks and podcasts wit
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 13378 |
 | **Access** | 🌐 Public — `books.srng.no` |
 

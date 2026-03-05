@@ -6,7 +6,7 @@ Authelia provides SSO (single sign-on) and two-factor authentication in front of
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 9091 |
 | **Access** | 🔒 VPN |
 

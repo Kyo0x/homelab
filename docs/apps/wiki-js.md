@@ -6,7 +6,7 @@ Wiki.js is a powerful, self-hosted knowledge base with Markdown editing, full-te
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 3000 |
 | **Access** | 🌐 Public — `docs.srng.no` |
 

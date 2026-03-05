@@ -6,7 +6,7 @@ Home Assistant is an open-source home automation platform that integrates and co
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 8123 |
 | **Access** | 🌐 Public — `home.srng.no` |
 

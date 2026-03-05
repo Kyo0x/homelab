@@ -8,9 +8,11 @@ Overseerr is a request management and media discovery tool for Plex. Users can r
 
 ## Deployment
 
-- **Host:** IBM Server (Proxmox VM/LXC)
-- **Access:** 🌐 Public — `request.srng.no`
-- **Port:** 5055
+| | |
+|---|---|
+| **Machine** | 🖥️ IBM Server |
+| **Port** | 5055 |
+| **Access** | 🌐 Cloudflare Tunnel — `request.srng.no` |
 
 ## Features
 

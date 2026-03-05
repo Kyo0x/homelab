@@ -6,7 +6,7 @@ Node-RED is a flow-based visual programming tool for wiring together IoT devices
 
 | | |
 |---|---|
-| **Host** | IBM Server |
+| **Machine** | 🖥️ IBM Server |
 | **Port** | 1880 |
 | **Access** | 🔒 VPN |
 

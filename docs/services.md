@@ -12,16 +12,6 @@ Complete service list for the homelab, organized by machine.
 
 ---
 
-## Domains
-
-| Domain | Purpose |
-|---|---|
-| **srng.no** | Personal homelab services |
-| **ITVaktmesteren.no** | Upcoming IT business |
-| **Arctichost.no** | Commercial server/game hosting |
-
----
-
 ## IBM Server
 > 2x Xeon E5-2650 · 384GB RAM · 25.6TB SAS SSD
 
@@ -29,81 +19,81 @@ Complete service list for the homelab, organized by machine.
 
 | Service | What it does | Access |
 |---|---|---|
-| **Radarr** | Auto-manages and downloads movies | 🔒 VPN |
-| **Sonarr** | Auto-manages and downloads TV shows | 🔒 VPN |
-| **Lidarr** | Auto-manages and downloads music | 🔒 VPN |
-| **Readarr** | Auto-manages and downloads ebooks | 🔒 VPN |
-| **Prowlarr** | Indexer manager for all *arrs | 🔒 VPN |
-| **qBittorrent** / **SABnzbd** | Download client, saves directly to local storage | 🔒 VPN |
-| **Bazarr** | Auto-downloads subtitles | 🔒 VPN |
-| **Overseerr** | Media request portal for movies/TV | 🌐 Public — `request.srng.no` |
+| [**Radarr**](apps/radarr.md) | Auto-manages and downloads movies | 🔒 VPN |
+| [**Sonarr**](apps/sonarr.md) | Auto-manages and downloads TV shows | 🔒 VPN |
+| [**Lidarr**](apps/lidarr.md) | Auto-manages and downloads music | 🔒 VPN |
+| [**Readarr**](apps/readarr.md) | Auto-manages and downloads ebooks | 🔒 VPN |
+| [**Prowlarr**](apps/prowlarr.md) | Indexer manager for all *arrs | 🔒 VPN |
+| [**qBittorrent**](apps/qbittorrent.md) / **SABnzbd** | Download client, saves directly to local storage | 🔒 VPN |
+| [**Bazarr**](apps/bazarr.md) | Auto-downloads subtitles | 🔒 VPN |
+| [**Overseerr**](apps/overseerr.md) | Media request portal for movies/TV | 🌐 [Cloudflare Tunnel](apps/cloudflare-tunnel.md) — `request.srng.no` |
 
 ### Music & Audio
 
 | Service | What it does | Access |
 |---|---|---|
-| **Navidrome** | Self-hosted Spotify, streams your music library | 🌐 Public — `music.srng.no` |
-| **Audiobookshelf** | Audiobooks + podcasts streamer | 🌐 Public — `books.srng.no` |
-| **Beets** | Auto-tags and organizes music library | 🔒 VPN |
+| [**Navidrome**](apps/navidrome.md) | Self-hosted Spotify, streams your music library | 🌐 [Cloudflare Tunnel](apps/cloudflare-tunnel.md) — `music.srng.no` |
+| [**Audiobookshelf**](apps/audiobookshelf.md) | Audiobooks + podcasts streamer | 🌐 [Cloudflare Tunnel](apps/cloudflare-tunnel.md) — `books.srng.no` |
+| [**Beets**](apps/beets.md) | Auto-tags and organizes music library | 🔒 VPN |
 
 ### Books & Reading
 
 | Service | What it does | Access |
 |---|---|---|
-| **Calibre-Web** | eBook library + web reader | 🔒 VPN |
-| **Kavita** | Manga, comics, and books in one UI | 🔒 VPN |
+| [**Calibre-Web**](apps/calibre-web.md) | eBook library + web reader | 🔒 VPN |
+| [**Kavita**](apps/kavita.md) | Manga, comics, and books in one UI | 🔒 VPN |
 
 ### Personal Cloud & Files
 
 | Service | What it does | Access |
 |---|---|---|
-| **Nextcloud** | Private Google Drive — files, calendar, contacts | 🔒 VPN |
-| **Syncthing** | Peer-to-peer file sync between devices | 🔒 VPN |
-| **Paperless-ngx** | Document scanner & management | 🔒 VPN |
-| **Filebrowser** | Web-based file manager | 🔒 VPN |
+| [**Nextcloud**](apps/nextcloud.md) | Private Google Drive — files, calendar, contacts | 🔒 VPN |
+| [**Syncthing**](apps/syncthing.md) | Peer-to-peer file sync between devices | 🔒 VPN |
+| [**Paperless-ngx**](apps/paperless-ngx.md) | Document scanner & management | 🔒 VPN |
+| [**Filebrowser**](apps/filebrowser.md) | Web-based file manager | 🔒 VPN |
 
 ### Security & Passwords
 
 | Service | What it does | Access |
 |---|---|---|
-| **Vaultwarden** | Self-hosted Bitwarden password manager | 🔒 VPN |
-| **Authelia** | SSO + 2FA across all services | 🔒 VPN |
-| **CrowdSec** | Collaborative IP banning & threat detection | 🔒 VPN |
+| [**Vaultwarden**](apps/vaultwarden.md) | Self-hosted Bitwarden password manager | 🔒 VPN |
+| [**Authelia**](apps/authelia.md) | SSO + 2FA across all services | 🔒 VPN |
+| [**CrowdSec**](apps/crowdsec.md) | Collaborative IP banning & threat detection | 🔒 VPN |
 
 ### Networking & Proxy
 
 | Service | What it does | Access |
 |---|---|---|
-| **Nginx Proxy Manager** | Reverse proxy + SSL for all services | 🔒 VPN |
-| **NetBird** | Self-hosted mesh VPN — full control plane on IBM | 🔒 VPN |
+| [**Nginx Proxy Manager**](apps/nginx-proxy-manager.md) | Reverse proxy + SSL for all services | 🔒 VPN |
+| [**NetBird**](apps/netbird.md) | Self-hosted mesh VPN — full control plane on IBM | 🔒 VPN |
 
 ### Monitoring & Observability
 
 | Service | What it does | Access |
 |---|---|---|
-| **Grafana + Prometheus** | Metrics dashboards for all machines | 🔒 VPN |
-| **Uptime Kuma** | Service status & uptime monitoring | 🔒 VPN |
-| **Netdata** | Real-time per-node performance | 🔒 VPN |
-| **Dozzle** | Live Docker log viewer | 🔒 VPN |
-| **Watchtower** | Auto-updates Docker containers | 🔒 VPN |
+| [**Grafana**](apps/grafana.md) + [**Prometheus**](apps/prometheus.md) | Metrics dashboards for all machines | 🔒 VPN |
+| [**Uptime Kuma**](apps/uptime-kuma.md) | Service status & uptime monitoring | 🔒 VPN |
+| [**Netdata**](apps/netdata.md) | Real-time per-node performance | 🔒 VPN |
+| [**Dozzle**](apps/dozzle.md) | Live Docker log viewer | 🔒 VPN |
+| [**Watchtower**](apps/watchtower.md) | Auto-updates Docker containers | 🔒 VPN |
 
 ### Home Automation
 
 | Service | What it does | Access |
 |---|---|---|
-| **Home Assistant** | King of home automation | 🔒 VPN |
-| **Node-RED** | Visual automation flows | 🔒 VPN |
+| [**Home Assistant**](apps/home-assistant.md) | King of home automation | 🔒 VPN |
+| [**Node-RED**](apps/node-red.md) | Visual automation flows | 🔒 VPN |
 
 ### Dev & Productivity
 
 | Service | What it does | Access |
 |---|---|---|
-| **Gitea / Forgejo** | Self-hosted GitHub | 🔒 VPN |
-| **Portainer** | Docker container GUI manager | 🔒 VPN |
-| **Homepage** | Clean homelab dashboard with widgets | 🔒 VPN |
-| **Wiki.js / BookStack** | Personal knowledge base / wiki | 🔒 VPN |
-| **Stirling-PDF** | All-in-one self-hosted PDF tools | 🔒 VPN |
-| **IT-Tools** | 100+ developer utility tools in one app | 🔒 VPN |
+| [**Gitea / Forgejo**](apps/gitea.md) | Self-hosted GitHub | 🔒 VPN |
+| [**Portainer**](apps/portainer.md) | Docker container GUI manager | 🔒 VPN |
+| [**Homepage**](apps/homepage.md) | Clean homelab dashboard with widgets | 🔒 VPN |
+| [**Wiki.js / BookStack**](apps/wiki-js.md) | Personal knowledge base / wiki | 🔒 VPN |
+| [**Stirling-PDF**](apps/stirling-pdf.md) | All-in-one self-hosted PDF tools | 🔒 VPN |
+| [**IT-Tools**](apps/it-tools.md) | 100+ developer utility tools in one app | 🔒 VPN |
 
 ---
 
@@ -114,27 +104,27 @@ Complete service list for the homelab, organized by machine.
 
 | Service | What it does | Access |
 |---|---|---|
-| **Plex** | Media streaming — reads from IBM via NFS, transcodes via NVENC | 🌐 Public — `plex.srng.no` |
+| [**Plex**](apps/plex.md) | Media streaming — reads from IBM via NFS, transcodes via NVENC | 🌐 Public — `plex.srng.no` |
 
 ### Photos
 
 | Service | What it does | Access |
 |---|---|---|
-| **Immich** | Self-hosted Google Photos with GPU-accelerated AI face detection | 🔒 VPN |
+| [**Immich**](apps/immich.md) | Self-hosted Google Photos with GPU-accelerated AI face detection | 🔒 VPN |
 
 ### AI & LLMs
 
 | Service | What it does | Access |
 |---|---|---|
-| **llama.cpp + llama-server** | Raw LLM inference, max performance from 8GB VRAM | 🔒 VPN |
-| **Open WebUI** | Beautiful ChatGPT-like UI for llama.cpp | 🔒 VPN |
-| **Stable Diffusion (Automatic1111)** | Local AI image generation | 🔒 VPN |
+| [**llama.cpp + llama-server**](apps/llama-cpp.md) | Raw LLM inference, max performance from 8GB VRAM | 🔒 VPN |
+| [**Open WebUI**](apps/open-webui.md) | Beautiful ChatGPT-like UI for llama.cpp | 🔒 VPN |
+| [**Stable Diffusion (Automatic1111)**](apps/stable-diffusion.md) | Local AI image generation | 🔒 VPN |
 
 ### Dev
 
 | Service | What it does | Access |
 |---|---|---|
-| **code-server** | VS Code in the browser | 🔒 VPN |
+| [**code-server**](apps/code-server.md) | VS Code in the browser | 🔒 VPN |
 
 ---
 
@@ -143,10 +133,10 @@ Complete service list for the homelab, organized by machine.
 
 | Service | What it does | Access |
 |---|---|---|
-| **Pi-hole / AdGuard Home** | Network-wide ad & tracker blocking | 🔒 VPN |
-| **Unbound** | Recursive DNS resolver — pairs with Pi-hole | 🔒 VPN |
-| **Mosquitto** | MQTT broker for IoT devices | 🔒 VPN |
-| **Zigbee2MQTT** | Zigbee device controller | 🔒 VPN |
+| [**Pi-hole / AdGuard Home**](apps/pi-hole.md) | Network-wide ad & tracker blocking | 🔒 VPN |
+| [**Unbound**](apps/unbound.md) | Recursive DNS resolver — pairs with Pi-hole | 🔒 VPN |
+| [**Mosquitto**](apps/mosquitto.md) | MQTT broker for IoT devices | 🔒 VPN |
+| [**Zigbee2MQTT**](apps/zigbee2mqtt.md) | Zigbee device controller | 🔒 VPN |
 
 ---
 

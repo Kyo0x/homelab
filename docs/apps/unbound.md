@@ -6,7 +6,7 @@ Unbound is a validating, recursive DNS resolver that runs alongside Pi-hole to e
 
 | | |
 |---|---|
-| **Host** | Raspberry Pi 4B |
+| **Machine** | 🍓 Raspberry Pi 4B |
 | **Port** | 5335 |
 | **Access** | 🔒 VPN |
 

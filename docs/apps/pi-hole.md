@@ -6,7 +6,7 @@ Pi-hole is a network-wide DNS sinkhole that blocks ads and trackers for every de
 
 | | |
 |---|---|
-| **Host** | Raspberry Pi 4B |
+| **Machine** | 🍓 Raspberry Pi 4B |
 | **Port** | 80 (web), 8080 (admin) |
 | **Access** | 🔒 VPN |
 
